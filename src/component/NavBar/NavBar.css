@@ -1,0 +1,58 @@
+#navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blue-effect{
+    background-color: rgba(231, 231, 231,0.3);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+#navbar .navbar-title{
+    flex-basis: 35%;
+    font-family: 'Righteous', cursive;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.navbar-input-container{
+    position: relative;
+    width: 50%;
+}
+.navbar-title{
+    font-size: 30px;
+    color: white;
+}
+.search-input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    color: rgb(95, 95, 95);
+}
+.search-btn{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    border: none;
+    background-color: transparent;
+    z-index: 55;
+}
+@media all and (max-width:768px){
+    #navbar .navbar-title {
+        flex-basis: 48%;
+        font-size: 21px;
+
+}
+#navbar .navbar-title{
+    text-shadow: 1px 2px 6px rgb(94 6 6 / 71%);
+}
+.search-input{
+    font-size: 12px;
+    color: rgb(95, 95, 95);
+}
+.search-btn{
+    top: 2px;
+}
+}
