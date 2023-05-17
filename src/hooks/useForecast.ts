@@ -30,7 +30,7 @@ const [forecastData,setForecastData] = useState<ForecastDataType|null |any>(null
     }
   };
   const getForcast = (city:OptionType) =>{
-    axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=5311beb487aef19654ee3d14aec2a4d4`)
+    axios.get(`http://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=5311beb487aef19654ee3d14aec2a4d4`)
     .then((res) => {
         const newList = res.data.list.slice(0,12)        
         setForecastData({...res.data ,list:newList})}
