@@ -13,7 +13,7 @@ const [forecastData,setForecastData] = useState<ForecastDataType|null |any>(null
   const fetchingDataByCityName = (value: any) => {
     axios
       .get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=10&appid=5311beb487aef19654ee3d14aec2a4d4`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=10&appid=e6d208efbaeed34d6a7de6d4cacfb2b2`
       )
       .then((res) => setOptions(res.data)
       );
